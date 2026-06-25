@@ -55,8 +55,8 @@ MUSS runs in three stages (`src/methods/muss.py`):
 <img src="assets/muss_overview.png" alt="MUSS multilevel selection: cluster the corpus, pick the most relevant + diverse clusters (S-bar), then pick the most relevant + diverse items within each (S_m)." width="52%">
 <br>
 <em>Figure 2 (from the paper): MUSS clusters the corpus, then performs <strong>multilevel selection</strong> —
-first choosing a diverse, high-quality set of clusters <em>S&#772;</em>, then selecting items <em>S<sub>m</sub></em>
-within each chosen cluster <em>U<sub>m</sub></em>.</em>
+first choosing a diverse, high-quality set of clusters S&#772;, then selecting items S<sub>m</sub>
+within each chosen cluster U<sub>m</sub>.</em>
 </div>
 
 <details>
@@ -172,8 +172,10 @@ synthetic data and is a good starting point.
 
 ```
 muss/
-├── data/                                       # datasets (parquet + JSON)
+├── data/                                       # RAG eval datasets (JSON)
 ├── assets/                                     # figures used in this README
+├── outputs/                                    # example RAG configs + experiment results
+├── __init__.py                                 # makes the repo importable as the `muss` package
 ├── requirements.txt
 ├── muss_colab_demo.ipynb                       # one-click Colab demo
 ├── muss_example.ipynb                          # quick-start notebook (local)
@@ -194,11 +196,12 @@ muss/
 │   │   └── embeddings.py                       # cached embedding + FAISS index
 │   ├── llm/bedrock_language_model.py           # AWS Bedrock wrapper
 │   └── generate_settings_rag.py               # build RAG configs
-├── Baselines.md                                # baseline methods MUSS is compared against
-└── readme.md
+├── baselines.md                                # baseline methods MUSS is compared against
+├── LICENSE
+└── README.md
 ```
 
-See [`Baselines.md`](Baselines.md) for the full list of baseline methods MUSS is compared against.
+See [`baselines.md`](baselines.md) for the full list of baseline methods MUSS is compared against.
 
 ## Citation
 

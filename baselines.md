@@ -1,6 +1,6 @@
 # Baselines
 
-MUSS is compared against the following selection methods (see the [README](readme.md) for the full project overview).
+MUSS is compared against the following selection methods (see the [README](README.md) for the full project overview).
 
 | Method | Where | Notes |
 |---|---|---|
