@@ -1,6 +1,6 @@
 <div align="center">
 
-# MUSS: Multilevel Subset Selection for Relevance and Diversity
+<h2>MUSS: Multilevel Subset Selection for Relevance and Diversity</h2>
 
 **Jointly select items that are both _high quality_ and _high diversity_ — at the scale of millions.**
 
@@ -168,19 +168,6 @@ The [Colab demo](https://colab.research.google.com/github/amazon-science/muss/bl
 (or local [`muss_example.ipynb`](muss_example.ipynb)) demonstrates the algorithm on
 synthetic data and is a good starting point.
 
-## Baselines
-
-| Method | Where | Notes |
-|---|---|---|
-| Random | `baselines.run_random_selection` | Uniform sampling |
-| MMR | `baselines.run_experiment_MMR` | Greedy MMR over the full corpus |
-| Clustering | `baselines.run_experiment_clustering` | FAISS k-means, top-quality per cluster |
-| k-DPP | `baselines.run_experiment_DPP` | Exact k-DPP via `dppy` |
-| DGDS | `baselines.run_DGDS` | Random partitioning + within-partition MMR (no cluster selection) |
-| MUSS (full) | `helpers.run_MUSS` | Stage 1+2+3 with FAISS clustering |
-| MUSS (rand. clusters) | `ablation_muss.run_MUSS_random_cluster_selection` | Stage 2 replaced by random selection |
-| MUSS (rand. partition) | `ablation_muss.run_MUSS_rand_partition` | Stage 1 replaced by random partitioning |
-
 ## Repository Layout
 
 ```
@@ -207,8 +194,11 @@ muss/
 │   │   └── embeddings.py                       # cached embedding + FAISS index
 │   ├── llm/bedrock_language_model.py           # AWS Bedrock wrapper
 │   └── generate_settings_rag.py               # build RAG configs
+├── Baselines.md                                # baseline methods MUSS is compared against
 └── readme.md
 ```
+
+See [`Baselines.md`](Baselines.md) for the full list of baseline methods MUSS is compared against.
 
 ## Citation
 
