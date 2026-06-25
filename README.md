@@ -7,6 +7,7 @@
 [![Paper](https://img.shields.io/badge/arXiv-2503.11126-b31b1b.svg)](https://arxiv.org/pdf/2503.11126)
 [![Venue](https://img.shields.io/badge/UAI-2026-blue.svg)](https://www.auai.org/)
 [![License](https://img.shields.io/badge/License-see%20LICENSE-green.svg)](LICENSE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amazon-science/muss/blob/main/muss_colab_demo.ipynb)
 
 [Vu Nguyen](https://ntienvu.github.io) · Andrey Kan — **Amazon**
 
@@ -16,11 +17,6 @@
 
 ## Overview
 
-Selecting a small subset that is simultaneously **relevant** and **diverse** is an NP-hard
-problem at the heart of recommender systems and retrieval-augmented generation (RAG).
-Greedy methods such as Maximum Marginal Relevance (MMR) do not scale, and partitioning
-approaches like DGDS leave quality on the table.
-
 **MUSS** uses a *multilevel* (partition → select-clusters → select-within) strategy that:
 
 - 📈 improves recommendation precision by **up to 4 points**,
@@ -29,17 +25,17 @@ approaches like DGDS leave quality on the table.
 - 🧮 comes with a **constant-factor approximation guarantee** (and a 2× tighter bound for DGDS).
 
 <div align="center">
+<img src="assets/muss_scaling.png" alt="Computational time vs. dataset size: MUSS stays nearly flat while MMR grows linearly." width="62%">
+<br>
+<em>Figure 1 (paper): MUSS scales to millions of items while MMR's runtime grows linearly.</em>
+</div>
+
+<div align="center">
 <img src="assets/muss_overview.png" alt="MUSS multilevel selection: cluster the corpus, pick the most relevant + diverse clusters (S-bar), then pick the most relevant + diverse items within each (S_m)." width="70%">
 <br>
 <em>Figure 2 (paper): MUSS clusters the corpus, then performs <strong>multilevel selection</strong> —
 first choosing a diverse, high-quality set of clusters <code>S&#772;</code>, then selecting items <code>S<sub>m</sub></code>
 within each chosen cluster <code>U<sub>m</sub></code>.</em>
-</div>
-
-<div align="center">
-<img src="assets/muss_scaling.png" alt="Computational time vs. dataset size: MUSS stays nearly flat while MMR grows linearly." width="62%">
-<br>
-<em>Figure 1 (paper): MUSS scales to millions of items while MMR's runtime grows linearly.</em>
 </div>
 
 It supports two applications out of the box:
