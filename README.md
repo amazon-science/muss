@@ -83,9 +83,13 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-The fastest way to see MUSS in action is the example notebook
-[`muss_example.ipynb`](muss_example.ipynb). It generates synthetic data (N = 100k, d = 50),
-runs MUSS to pick `k = 50` items, and compares quality and diversity against random selection.
+The fastest way to see MUSS in action — no local setup required — is the Colab demo:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amazon-science/muss/blob/main/muss_colab_demo.ipynb)
+
+It generates synthetic data (N = 100k, d = 50), runs MUSS to pick `k = 50` items, and compares
+quality and diversity against random selection — with a PCA visualization of the result.
+Prefer to run locally? The same walkthrough lives in [`muss_example.ipynb`](muss_example.ipynb).
 
 Minimal Python usage:
 
@@ -159,7 +163,8 @@ per-feature entropy reporting if present.
 | DevOps QA | `data/DevOps/ExamData/html_llamav2_2023091421/exam.json` | RAG |
 
 For candidate retrieval, supply your own parquet file with the columns listed above.
-The [`muss_example.ipynb`](muss_example.ipynb) notebook demonstrates the algorithm on
+The [Colab demo](https://colab.research.google.com/github/amazon-science/muss/blob/main/muss_colab_demo.ipynb)
+(or local [`muss_example.ipynb`](muss_example.ipynb)) demonstrates the algorithm on
 synthetic data and is a good starting point.
 
 ## Baselines
@@ -182,7 +187,8 @@ muss/
 ├── data/                                       # datasets (parquet + JSON)
 ├── assets/                                     # figures used in this README
 ├── requirements.txt
-├── muss_example.ipynb                          # quick-start notebook
+├── muss_colab_demo.ipynb                       # one-click Colab demo
+├── muss_example.ipynb                          # quick-start notebook (local)
 ├── run_experiment_rag.py                       # RAG experiment runner
 ├── run_experiment_candidate_retrieval.py
 ├── run_experiment_candidate_retrieval_ablation.py
