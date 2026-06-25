@@ -1,0 +1,8 @@
+package.Muss = {
+    interfaces = (1.0);
+
+    build-system = no-op;
+    build-tools = {
+        NoOpBuild = 1.0;
+    };
+};

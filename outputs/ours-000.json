@@ -1,0 +1,401 @@
+{
+  "models": [
+    "us.anthropic.claude-3-5-haiku-20241022-v1:0"
+  ],
+  "datasets": [
+    "StackExchange",
+    "DevOps"
+  ],
+  "methods": [
+    {
+      "label": "MUSS (random)~100~10~0.1~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.1,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.1~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.1,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.1~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.1,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.1~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.1,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.3~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.3,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.3~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.3,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.3~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.3,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.3~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.3,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.5~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.5,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.5~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.5,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.5~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.5,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.5~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.5,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.7~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.7~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.9~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.9,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.9~0.5",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.9,
+        "lambda_points": 0.5
+      }
+    },
+    {
+      "label": "MUSS (random)~100~10~0.9~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.9,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~10~0.9~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.9,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~050~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 50,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~050~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 50,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~050~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 50,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~050~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 50,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~100~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~100~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 100,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~200~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 200,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~200~10~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 200,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 10,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (random)~200~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 200,
+        "algorithm": "packing_random"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    },
+    {
+      "label": "MUSS (clustering)~200~20~0.7~0.7",
+      "method_key": "muss",
+      "pre_proc_params": {
+        "n_clusters": 200,
+        "algorithm": "packing_k_means"
+      },
+      "parameters": {
+        "m": 20,
+        "lambda_clusters": 0.7,
+        "lambda_points": 0.7
+      }
+    }
+  ]
+}
