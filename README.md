@@ -8,7 +8,7 @@
 [![Venue](https://img.shields.io/badge/UAI-2026-blue.svg)](https://www.auai.org/)
 [![License](https://img.shields.io/badge/License-see%20LICENSE-green.svg)](LICENSE)
 
-Vu Nguyen · Andrey Kan — **Amazon**
+[Vu Nguyen](https://ntienvu.github.io) · Andrey Kan — **Amazon**
 
 </div>
 
