@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-see%20LICENSE-green.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amazon-science/muss/blob/main/muss_colab_demo.ipynb)
 
-[Vu Nguyen](https://ntienvu.github.io) · Andrey Kan — **Amazon**
+[Vu Nguyen](https://ntienvu.github.io) · Andrey Kan · **Amazon**
 
 </div>
 
@@ -25,25 +25,22 @@
 - 🧮 comes with a **constant-factor approximation guarantee** (and a 2× tighter bound for DGDS).
 
 <div align="center">
-<img src="assets/muss_scaling.png" alt="Computational time vs. dataset size: MUSS stays nearly flat while MMR grows linearly." width="62%">
+<img src="assets/muss_scaling.png" alt="Computational time vs. dataset size: MUSS stays nearly flat while MMR grows linearly." width="53%">
 <br>
-<em>Figure 1 (paper): MUSS scales to millions of items while MMR's runtime grows linearly.</em>
-</div>
-
-<div align="center">
-<img src="assets/muss_overview.png" alt="MUSS multilevel selection: cluster the corpus, pick the most relevant + diverse clusters (S-bar), then pick the most relevant + diverse items within each (S_m)." width="70%">
-<br>
-<em>Figure 2 (paper): MUSS clusters the corpus, then performs <strong>multilevel selection</strong> —
-first choosing a diverse, high-quality set of clusters <code>S&#772;</code>, then selecting items <code>S<sub>m</sub></code>
-within each chosen cluster <code>U<sub>m</sub></code>.</em>
+<em>Figure 1 (from the paper): MUSS scales to millions of items while MMR's runtime grows linearly.</em>
 </div>
 
 It supports two applications out of the box:
 
-| Application | What MUSS picks |
-|---|---|
-| **Retrieval-Augmented Generation (RAG)** | Diverse, relevant context passages for an LLM to read |
-| **Candidate Retrieval** | A diverse, high-quality subset from a large corpus (e.g. a product catalog) |
+<table>
+<thead>
+<tr><th width="320">Application</th><th>What MUSS picks</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Retrieval-Augmented Generation (RAG)</strong></td><td>Diverse, relevant context passages for an LLM to read</td></tr>
+<tr><td><strong>Candidate Retrieval</strong></td><td>A diverse, high-quality subset from a large corpus (e.g. a product catalog)</td></tr>
+</tbody>
+</table>
 
 ## How It Works
 
@@ -53,6 +50,14 @@ MUSS runs in three stages (`src/methods/muss.py`):
 2. **Select clusters** — pick `m` partitions using MMR on cluster centroids + median quality.
 3. **Select within + final pass** — run MMR in parallel inside each selected partition,
    union with the top-`k` highest-quality items, then a final MMR pass over the union.
+
+<div align="center">
+<img src="assets/muss_overview.png" alt="MUSS multilevel selection: cluster the corpus, pick the most relevant + diverse clusters (S-bar), then pick the most relevant + diverse items within each (S_m)." width="52%">
+<br>
+<em>Figure 2 (from the paper): MUSS clusters the corpus, then performs <strong>multilevel selection</strong> —
+first choosing a diverse, high-quality set of clusters <em>S&#772;</em>, then selecting items <em>S<sub>m</sub></em>
+within each chosen cluster <em>U<sub>m</sub></em>.</em>
+</div>
 
 <details>
 <summary><strong>Parameter reference</strong></summary>
