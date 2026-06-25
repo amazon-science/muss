@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-see%20LICENSE-green.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amazon-science/muss/blob/main/muss_colab_demo.ipynb)
 
-[Vu Nguyen](https://ntienvu.github.io) · Andrey Kan · **Amazon**
+[Vu Nguyen](https://ntienvu.github.io) · Andrey Kan
 
 </div>
 
@@ -37,7 +37,7 @@ It supports two applications out of the box:
 <tr><th width="320">Application</th><th>What MUSS picks</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Retrieval-Augmented Generation (RAG)</strong></td><td>Diverse, relevant context passages for an LLM to read</td></tr>
+<tr><td><strong>Retrieval&#8209;Augmented&nbsp;Generation&nbsp;(RAG)</strong></td><td>Diverse, relevant context passages for an LLM to read</td></tr>
 <tr><td><strong>Candidate Retrieval</strong></td><td>A diverse, high-quality subset from a large corpus (e.g. a product catalog)</td></tr>
 </tbody>
 </table>
