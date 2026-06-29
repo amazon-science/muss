@@ -2,7 +2,7 @@ numpy>=1.24
 pandas==2.3.2
 tqdm>=4.0
 langchain-huggingface==0.1.2
-langchain-community==0.3.5
+langchain-community==0.3.27
 nltk==3.9.1
 boto3==1.35.53
 faiss-cpu==1.10.0
