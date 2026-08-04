@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use MUSS in your research, please cite it as below."
+title: "MUSS: Multilevel Subset Selection for Relevance and Diversity"
+authors:
+  - family-names: Nguyen
+    given-names: Vu
+  - family-names: Kan
+    given-names: Andrey
+repository-code: "https://github.com/amazon-science/muss"
+url: "https://arxiv.org/abs/2503.11126"
+license: CC-BY-NC-4.0
+keywords:
+  - subset selection
+  - diversity
+  - maximal marginal relevance
+  - retrieval-augmented generation
+  - recommender systems
+preferred-citation:
+  type: conference-paper
+  title: "MUSS: Multilevel Subset Selection for Relevance and Diversity"
+  authors:
+    - family-names: Nguyen
+      given-names: Vu
+    - family-names: Kan
+      given-names: Andrey
+  collection-title: "Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)"
+  year: 2026
+  url: "https://arxiv.org/abs/2503.11126"
